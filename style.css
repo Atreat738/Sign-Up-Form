@@ -1,0 +1,38 @@
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapperDiv {
+    height: 100vh;
+    display: flex;
+}
+
+#leftContainer {
+    background: url('images/plantbg.jpg') no-repeat center center fixed;
+    flex: 1;
+    color: white;
+ 
+}
+
+.logoDiv {
+    background-color: black;
+    opacity: 0.3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logoDiv h1 {
+    opacity: 1;
+}
+
+#rightContainer {
+    flex: 2;
+}
+
+button {
+    color: white;
+    background-color: #596D48;
+}
