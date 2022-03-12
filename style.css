@@ -1,38 +1,99 @@
 html {
-    height: 100%;
     margin: 0;
     padding: 0;
 }
 
 .wrapperDiv {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
 }
 
 #leftContainer {
-    background: url('images/plantbg.jpg') no-repeat center center fixed;
+    background: url('images/plantbg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
     flex: 1;
     color: white;
- 
+    position: relative;
+}
+
+#leftContainer p {
+    position: absolute;
+    bottom: 0;
+    left: 10em;
 }
 
 .logoDiv {
-    background-color: black;
-    opacity: 0.3;
+    background: rgba(0, 0, 0, 0.3);
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.logoDiv h1 {
-    opacity: 1;
+    font-size: 2em;
+    margin-top: 5em;
 }
 
 #rightContainer {
     flex: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.rightDiv {
+    flex: 2;
+    align-content: left;
+    padding: 2em;
+    background-color: #F5F5F5;
+}
+
+.descDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    font-size: 1.25rem;
+    font-weight: bold;
+    inline-size: 60%;
+    margin-top: 1em;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 2em;
+    max-width: 50%;
+
+}
+
+form p {
+    padding: 0;
+    margin: 0;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+#rightContainer form {
+    flex: 1.5;
 }
 
 button {
+    border-radius: 10px;
     color: white;
     background-color: #596D48;
+    padding: 0.6em 2.5em;
+    font-size: 1.05rem;
+    font-weight: 600;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+#logInTag {
+    text-decoration: none;
+    color: #596D48;
+    font-weight: bold;
+}
+
+#logInTag:hover {
+    text-decoration: underline;
 }

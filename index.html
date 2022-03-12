@@ -13,40 +13,46 @@
 
         <section id="leftContainer">
             <div class="logoDiv">
-                <h1>Odin</h1>
+                <h1>ODIN</h1>
             </div>
-            <p>Photo by Halie West on Unsplash</p>
+            <p>Photo by <u>Halie West</u> on <u>Unsplash</u></p>
         </section>
 
         <section id="rightContainer">
-            <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <i>now</i> to get started.</p>
-            <p>You <i>know</i> you want to.</p>
+            <div class="rightDiv">
+                <div class="descDiv">
+                    <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. <br>Sign up <i>now</i> to get started.</br></p>
+                    <p>You <i>know</i> you want to.</p>
+                </div>
+            </div>
 
             <form>
                 <h3>Let's do this!</h3>
-                <label for="firstName"> FIRST NAME
+                <label for="firstName" class="rowLeft"><p>FIRST NAME</p>
                     <input type="text" name="firstName" id="firstName"> 
                 </label>
-                <label for="lastName"> LAST NAME
+                <label for="lastName" class="rowRight"><p>LAST NAME</p>
                     <input type="text" name="lastName" id="lastName"> 
                 </label>
-                <label for="email"> EMAIL
+                <label for="email"><p>EMAIL</p>
                     <input type="email" name="email" id="email"> 
                 </label>
-                <label for="phone"> PHONE NUMBER
+                <label for="phone"><p>PHONE NUMBER</p>
                     <input type="text" name="phone" id="phone"> 
                 </label>
-                <label for="password"> PASSWORD
+                <label for="password"><p>PASSWORD</p>
                     <input type="password" name="password" id="password"> 
                 </label>
-                <label for="confirmPW"> CONFIRM PASSWORD
+                <label for="confirmPW"><p>CONFIRM PASSWORD</p>
                     <input type="password" name="confirmPW" id="confirmPW"> 
                 </label>
                 
             </form>
 
-            <button>Create Account</button>
-            <p>Already have an account? <a href="#">Log In</a></p>
+            <div class="rightDiv">
+                <button>Create Account</button>
+                <p>Already have an account? <a href="#" id="logInTag">Log In</a></p>
+            </div>
         </section>
 
     </div>
